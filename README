@@ -1,0 +1,12 @@
+This app is known as "iBanker", available for iOS (iPhone and iPad).  iBanker replaces paper money and the job of “banker” in board games like Monopoly® and The Game of Life®. All transactions of money to and from “the bank” are supported, as well as transfers from one player to another. iBanker adds to the fun by allowing players to set a picture for themselves, and sound effects chime-in for most transactions. The Spinner function provides the Spin to Win® function for the electronic banking version of The Game of Life®.
+
+This app project was started by Peter James Maiser (Pete Maiser) in 2015, the app was first released on the Apple App Store in 2016, and this code was first published on GitHub under the MIT license in 2017.  A LICENSE file is included.
+
+Monopoly and The Game of Life and are registered trademarks of Hasbro, Inc. Spin to Win is a registered trademark of The Trustee of the Reuben B. Klamer L.T. The author of this application is not affiliated with with those trademark owners, nor is this application endorsed by, supported by, or in any other way connected with those registered trademark owners.
+
+
+Release Updates:
+
+R1.1 --- Minor improvements and small feature changes as suggested by Customer Reviews.  It is a truth universally acknowledged, that people who rate apps rock.  Also put app in GitHub under an MIT license.
+
+R1.0 --- Initial app
