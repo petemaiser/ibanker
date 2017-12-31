@@ -126,13 +126,51 @@
 		B546DF0F1BDBCC360006D303 /* GameCalc */ = {
 			isa = PBXGroup;
 			children = (
-				B57360531CACC65D007280D8 /* Model Objects */,
-				B57E12491E667A590022DD74 /* Model Stores */,
-				B57360541CACC665007280D8 /* Helpers */,
+				B5E6DDD81FEED32E00C5CB03 /* Helpers */,
+				B5E6DDD31FEED24000C5CB03 /* Model Objects */,
+				B5E6DDD41FEED24F00C5CB03 /* Model Stores */,
+				B5E6DDD51FEED27700C5CB03 /* View Controllers */,
 				B546DF211BDBCC360006D303 /* LaunchScreen.storyboard */,
 				B546DF1C1BDBCC360006D303 /* Main.storyboard */,
 				B546DF131BDBCC360006D303 /* AppDelegate.h */,
 				B546DF141BDBCC360006D303 /* AppDelegate.m */,
+				B5E6DDD71FEED2A000C5CB03 /* Supporting Files */,
+				B546DF1F1BDBCC360006D303 /* Assets.xcassets */,
+				B546DF241BDBCC360006D303 /* Info.plist */,
+			);
+			path = GameCalc;
+			sourceTree = "<group>";
+		};
+		B5E6DDD31FEED24000C5CB03 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B546DF2A1BDBCCB90006D303 /* Player.h */,
+				B546DF2B1BDBCCB90006D303 /* Player.m */,
+				B573605D1CACC88E007280D8 /* Mode.h */,
+				B573605E1CACC88E007280D8 /* Mode.m */,
+				B57360591CACC88E007280D8 /* LogItem.h */,
+				B573605A1CACC88E007280D8 /* LogItem.m */,
+			);
+			path = "Model Objects";
+			sourceTree = "<group>";
+		};
+		B5E6DDD41FEED24F00C5CB03 /* Model Stores */ = {
+			isa = PBXGroup;
+			children = (
+				B546DF2C1BDBCCB90006D303 /* PlayerStore.h */,
+				B546DF2D1BDBCCB90006D303 /* PlayerStore.m */,
+				B573605F1CACC88E007280D8 /* SettingsStore.h */,
+				B57360601CACC88E007280D8 /* SettingsStore.m */,
+				B57360571CACC88E007280D8 /* Log.h */,
+				B57360581CACC88E007280D8 /* Log.m */,
+			);
+			path = "Model Stores";
+			sourceTree = "<group>";
+		};
+		B5E6DDD51FEED27700C5CB03 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5E6DDD61FEED28400C5CB03 /* TableView Cells */,
 				B546DF161BDBCC360006D303 /* MasterViewController.h */,
 				B546DF171BDBCC360006D303 /* MasterViewController.m */,
 				B546DF191BDBCC360006D303 /* DetailViewController.h */,
@@ -143,15 +181,23 @@
 				B573605C1CACC88E007280D8 /* LogViewController.m */,
 				B5CA32491C0B93F300CAA363 /* SpinnerViewController.h */,
 				B5CA324A1C0B93F300CAA363 /* SpinnerViewController.m */,
-				B57E124A1E667A9F0022DD74 /* TableView Cells */,
-				B546DF101BDBCC360006D303 /* Supporting Files */,
-				B546DF1F1BDBCC360006D303 /* Assets.xcassets */,
-				B546DF241BDBCC360006D303 /* Info.plist */,
 			);
-			path = GameCalc;
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		B546DF101BDBCC360006D303 /* Supporting Files */ = {
+		B5E6DDD61FEED28400C5CB03 /* TableView Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B50BE42D1BE50DD7008CD8E6 /* PlayerCell.h */,
+				B50BE42E1BE50DD7008CD8E6 /* PlayerCell.m */,
+				B5F59C4E1D29979D009296C4 /* InstructionsCell.h */,
+				B5F59C4F1D29979D009296C4 /* InstructionsCell.m */,
+				B5F59C501D29979D009296C4 /* InstructionsCell.xib */,
+			);
+			path = "TableView Cells";
+			sourceTree = "<group>";
+		};
+		B5E6DDD71FEED2A000C5CB03 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				B578FD4D1CE2C3FD00820ED4 /* log28.png */,
@@ -165,23 +211,10 @@
 				B55B66721C0A3E86007FC779 /* CashRegister.Myoung8.commonswiki.m4a */,
 				B546DF111BDBCC360006D303 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B57360531CACC65D007280D8 /* Model Objects */ = {
-			isa = PBXGroup;
-			children = (
-				B546DF2A1BDBCCB90006D303 /* Player.h */,
-				B546DF2B1BDBCCB90006D303 /* Player.m */,
-				B573605D1CACC88E007280D8 /* Mode.h */,
-				B573605E1CACC88E007280D8 /* Mode.m */,
-				B57360591CACC88E007280D8 /* LogItem.h */,
-				B573605A1CACC88E007280D8 /* LogItem.m */,
-			);
-			name = "Model Objects";
-			sourceTree = "<group>";
-		};
-		B57360541CACC665007280D8 /* Helpers */ = {
+		B5E6DDD81FEED32E00C5CB03 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				B5D129411C0BF6B500C05227 /* GameAudioPlayer.h */,
@@ -189,32 +222,7 @@
 				B55538ED1C152800006E1848 /* GameImageMaker.h */,
 				B55538EE1C152800006E1848 /* GameImageMaker.m */,
 			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
-		B57E12491E667A590022DD74 /* Model Stores */ = {
-			isa = PBXGroup;
-			children = (
-				B546DF2C1BDBCCB90006D303 /* PlayerStore.h */,
-				B546DF2D1BDBCCB90006D303 /* PlayerStore.m */,
-				B573605F1CACC88E007280D8 /* SettingsStore.h */,
-				B57360601CACC88E007280D8 /* SettingsStore.m */,
-				B57360571CACC88E007280D8 /* Log.h */,
-				B57360581CACC88E007280D8 /* Log.m */,
-			);
-			name = "Model Stores";
-			sourceTree = "<group>";
-		};
-		B57E124A1E667A9F0022DD74 /* TableView Cells */ = {
-			isa = PBXGroup;
-			children = (
-				B50BE42D1BE50DD7008CD8E6 /* PlayerCell.h */,
-				B50BE42E1BE50DD7008CD8E6 /* PlayerCell.m */,
-				B5F59C4E1D29979D009296C4 /* InstructionsCell.h */,
-				B5F59C4F1D29979D009296C4 /* InstructionsCell.m */,
-				B5F59C501D29979D009296C4 /* InstructionsCell.xib */,
-			);
-			name = "TableView Cells";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +251,7 @@
 		B546DF051BDBCC360006D303 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Pete Maiser";
 				TargetAttributes = {
 					B546DF0C1BDBCC360006D303 = {
@@ -350,14 +358,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -396,14 +410,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

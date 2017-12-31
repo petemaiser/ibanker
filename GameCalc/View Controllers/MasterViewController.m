@@ -159,7 +159,7 @@
     if (count == 0) {
         
         // If we are not in editing mode (i.e. just starting-up), then set instructions mode to YES
-        // to load some instruction cells into the otherwise emplty table.  Note that Split-screens
+        // to load some instruction cells into the otherwise empty table.  Note that Split-screens
         // will already have some of the instructions showing in the settings view on initial start-up.
         if (!tableView.isEditing) {
             self.instructionsMode = YES;

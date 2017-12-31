@@ -24,7 +24,7 @@ const NSInteger trailerGroupCount = 1;  // should be set at one  - this is the g
 
 @interface SpinnerViewController () < UINavigationControllerDelegate, UIImagePickerControllerDelegate >
 
-@property (strong, nonatomic) NSArray *dollarList;         // The list of values that the random spinner is spinnning through
+@property (strong, nonatomic) NSArray *dollarList;         // The list of values that the random spinner is spinning through
 @property (strong, nonatomic) NSArray *dollarListDefault;  // The list that the spinner starts with and defaults back to...e.g. "????"
 @property (nonatomic) NSInteger dollarListCount;
 @property (nonatomic) NSInteger dollarListDefaultCount;
@@ -136,7 +136,7 @@ const NSInteger trailerGroupCount = 1;  // should be set at one  - this is the g
             
             if (sendToPlayerIndex >= 0) {
                 
-                // This audio file recorded by Pete Maiser and Kate Maiser.  Copywrite 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
+                // This audio file recorded by Pete Maiser and Kate Maiser.  Copyright 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
                 GameAudioPlayer *audioPlayer = [GameAudioPlayer sharedAudioPlayer];
                 if (audioPlayer) {
                     [audioPlayer playMPEG4:@"HappySound"

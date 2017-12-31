@@ -7,9 +7,9 @@
 //
 //  GameAudioPlayer makes use of AVAudioPlayer, which is a great simple way to play a quick audio file,
 //  but it tends to get cleaned-up by ARC after you complete the method in which you called it - which is
-//  before you get any sound out of it - ARC rudely interupts it before it performs its function for you.
+//  before you get any sound out of it - ARC rudely interrupts it before it performs its function for you.
 //
-//  The typcial fix is to make AVAudio player a property in whatever object you are using it in.  But if you
+//  The typical fix is to make AVAudio player a property in whatever object you are using it in.  But if you
 //  need sound more than once in that object, the result is that you end up calling initWithContentsOfURL:error:
 //  multiple times, and that ends up in the potential for a memory leak.  GameAudioPlayer solves that problem
 //  by creating an NSObject singleton from which to call AVAudioPlayer.  GameAudioPlayer puts each AVAudioPlayer

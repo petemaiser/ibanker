@@ -68,7 +68,7 @@
     self.audioPlayer = [GameAudioPlayer sharedAudioPlayer];   /* really just starting-up the player so it is ready for the first sound */
     self.imageMaker = [[GameImageMaker alloc] init];
     
-    // Set delegatess
+    // Set delegates
     self.playerName.delegate = self;
     self.playerTag.delegate = self;
     self.sallaryInDollars.delegate = self;
@@ -319,7 +319,7 @@
 
 - (IBAction)add:(id)sender
 {
-    // It is possible the player may click the "Add" button immediately after changine the salary;
+    // It is possible the player may click the "Add" button immediately after changing the salary;
     // if so this should function as a "return" - i.e. record the changed salary
     NSString *unformattedSalary = [self stripString:self.sallaryInDollars.text];
     int salaryInDollarsInteger  = [unformattedSalary intValue];
@@ -396,7 +396,7 @@
     
     if (subtractDollars > 0) {
        
-        // This audio file recorded by Pete Maiser.  Copywrite 2015.  Authorized for use in this application by PM.
+        // This audio file recorded by Pete Maiser.  Copyright 2015.  Authorized for use in this application by PM.
         if (self.audioPlayer) {
             [self.audioPlayer playMPEG4:@"CoinDrop"
                             volume:1.0];
@@ -410,7 +410,7 @@
         if ((self.detailPlayer.bankAccountInDollars < 0) &&
             (beforeDollars >= 0)) {
             
-            // This audio file recorded by Pete Maiser and Kate Maiser.  Copywrite 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
+            // This audio file recorded by Pete Maiser and Kate Maiser.  Copyright 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
             if (self.audioPlayer) {
                 [self.audioPlayer queueMPEG4:@"SadSound"
                                  volume:1.0];
@@ -453,7 +453,7 @@
         if (sendToPlayerIndex >= 0) {
             
             // Play a sound on behalf of the player getting the money.
-            // This audio file recorded by Pete Maiser and Kate Maiser.  Copywrite 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
+            // This audio file recorded by Pete Maiser and Kate Maiser.  Copyright 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
             if (self.audioPlayer) {
                 [self.audioPlayer playMPEG4:@"HappySound"
                                 volume:1.0];
@@ -471,7 +471,7 @@
             if ((self.detailPlayer.bankAccountInDollars < 0) &&
                 (beforeDollars >= 0)) {
                 
-                // This audio file recorded by Pete Maiser and Kate Maiser.  Copywrite 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
+                // This audio file recorded by Pete Maiser and Kate Maiser.  Copyright 2015.  Authorized for inclusion into this work, and any derivations thereof, by PM and KM.
                 if (self.audioPlayer) {
                     [self.audioPlayer queueMPEG4:@"SadSound"
                                      volume:1.0];
