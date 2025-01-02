@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LogItem : NSObject
+@interface LogItem : NSObject <NSSecureCoding>
 
 @property (nonatomic, copy) NSString *text;
 

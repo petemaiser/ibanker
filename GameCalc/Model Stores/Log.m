@@ -39,14 +39,15 @@
 
 - (instancetype)initPrivate
 {
-    
     // This is the real initializer
     self = [super init];
     if (self) {
         
-        // First try to retrieve saved players
-        NSString * path = [self archivePath];
-        _privateLogItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        // First try to retrieve saved log
+        NSSet *set = [NSSet setWithObjects:[NSMutableArray class], [LogItem class], [NSString class], nil];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:[self archivePath]];
+        NSError *error;
+        _privateLogItems = [NSKeyedUnarchiver unarchivedObjectOfClasses:set fromData:data error:&error];
         
         // If there is no saved log then start fresh
         if (!_privateLogItems) {
@@ -165,25 +166,10 @@
     }
     
     // Archive
-    NSString *path = [self archivePath];
-    return [NSKeyedArchiver archiveRootObject:self.privateLogItems
-                                       toFile:path];
-}
-
-- (void)encodeWithCoder:( NSCoder *) aCoder
-{
-    [aCoder encodeObject:self.privateLogItems forKey:@"privateLogItems"];
-
-}
-
-- (instancetype)initWithCoder:( NSCoder *) aDecoder
-{
-    self = [super init];
-    if (self) {
-        _privateLogItems = [aDecoder decodeObjectForKey:@"privateLogItems"];
-    }
-    
-    return self;
+    NSError *error;
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:self.privateLogItems requiringSecureCoding:YES error:&error];
+    BOOL success = [data writeToFile:[self archivePath] atomically:YES];
+    return success;
 }
 
 @end

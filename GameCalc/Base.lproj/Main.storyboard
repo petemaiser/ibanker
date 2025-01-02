@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1p-Uh-vWS">
+    <device id="ipad10_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +12,7 @@
             <objects>
                 <navigationController title="Players" id="RMx-3f-FxP" userLabel="Players Nav Controller" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <rect key="frame" x="0.0" y="24" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -31,7 +28,7 @@
             <objects>
                 <navigationController id="Atk-NE-IaM" userLabel="Settings Nav Controller" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YI7-nk-nk7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -51,7 +48,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ysJ-aB-QCe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mdo-UH-OrR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U71-oQ-FBS">
@@ -62,7 +59,7 @@
                                     <outlet property="delegate" destination="4OO-pi-M1y" id="sqe-YL-i6Z"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-4Y-OqE">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TP3-4Y-OqE">
                                 <rect key="frame" x="72" y="274" width="236" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,7 +139,7 @@
             <objects>
                 <navigationController id="5Ji-en-fhc" userLabel="Log Nav Controller" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tBN-fH-AMf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -162,11 +159,11 @@
                         <viewControllerLayoutGuide type="bottom" id="GZH-9a-gnX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="NU3-8e-3n5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" pagingEnabled="YES" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG1-Lv-lil">
-                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <rect key="frame" x="20" y="74" width="780" height="1086"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Activity Log
 </string>
@@ -200,11 +197,11 @@
                         <viewControllerLayoutGuide type="bottom" id="HZl-e8-68n"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TCB-nR-1gQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvc-ae-7IU">
-                                <rect key="frame" x="104" y="122" width="200" height="88"/>
+                                <rect key="frame" x="107.5" y="132" width="200" height="88"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
@@ -217,12 +214,12 @@
                                     <outlet property="delegate" destination="6jH-A9-YI8" id="Ieu-SL-4Ma"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy9-LS-SA9">
-                                <rect key="frame" x="104" y="327" width="200" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy9-LS-SA9">
+                                <rect key="frame" x="108" y="337" width="200" height="32"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="FzY-ZG-duh"/>
-                                    <constraint firstAttribute="width" constant="200" id="gD3-4s-DTm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="gD3-4s-DTm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Send Prize Money"/>
@@ -230,11 +227,11 @@
                                     <action selector="send:" destination="6jH-A9-YI8" eventType="touchUpInside" id="Att-lm-vXR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mi6-br-LfI">
-                                <rect key="frame" x="104" y="82" width="200" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mi6-br-LfI">
+                                <rect key="frame" x="108" y="92" width="200" height="32"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="YIK-ru-AF6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="YIK-ru-AF6"/>
                                     <constraint firstAttribute="height" constant="32" id="xTL-1z-gsl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -244,7 +241,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d89-ii-3V2">
-                                <rect key="frame" x="18" y="125" width="60" height="60"/>
+                                <rect key="frame" x="22" y="135" width="59.5" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8sn-oh-cU4"/>
                                 </constraints>
@@ -255,7 +252,7 @@ Money:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9s-d1-EvJ">
-                                <rect key="frame" x="18" y="234" width="63" height="60"/>
+                                <rect key="frame" x="22" y="244" width="62" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ndO-zz-sh3"/>
                                 </constraints>
@@ -266,7 +263,7 @@ Winner:</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BW2-jT-mdP">
-                                <rect key="frame" x="104" y="231" width="200" height="88"/>
+                                <rect key="frame" x="107" y="241" width="200" height="88"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="88" id="9qh-zx-eep"/>
                                     <constraint firstAttribute="width" constant="200" id="rZ3-us-Ou8"/>
@@ -309,7 +306,7 @@ Winner:</string>
                 <navigationController id="NSp-Gh-ycT" userLabel="Spinner Nav Controller" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lXm-Jq-zC3"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KgN-ro-nXO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -343,42 +340,45 @@ Winner:</string>
                         <viewControllerLayoutGuide type="bottom" id="NeG-AW-rmJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jM7-lF-zU9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Ls0-Bb-Urv">
-                                <rect key="frame" x="-4" y="623" width="383" height="44"/>
+                                <rect key="frame" x="-4.5" y="1110" width="328.5" height="50"/>
                                 <items/>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="r7i-6Z-zg0">
-                                <rect key="frame" x="-4" y="64" width="383" height="559"/>
+                                <rect key="frame" x="-4.5" y="74" width="328.5" height="1036"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Player Cell" id="lmB-qe-mNz" customClass="PlayerCell">
-                                        <rect key="frame" x="0.0" y="22" width="383" height="72"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="328.5" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lmB-qe-mNz" id="3gp-ZV-wQZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="383" height="72"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="328.5" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Z87-eD-NWk" userLabel="Player Tag">
-                                                    <rect key="frame" x="70" y="37" width="178" height="30"/>
+                                                    <rect key="frame" x="78" y="40" width="107.5" height="25"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="w0l-ad-IVr"/>
+                                                    </constraints>
                                                     <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley.png" translatesAutoresizingMaskIntoConstraints="NO" id="xHc-Kp-Fhm" userLabel="Player Picture">
-                                                    <rect key="frame" x="10" y="8" width="54" height="54"/>
+                                                    <rect key="frame" x="18" y="9" width="54" height="54"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="54" id="CbW-Sk-riG"/>
                                                         <constraint firstAttribute="width" constant="54" id="tbo-aV-0VX"/>
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-xN-SbO" userLabel="Player Money">
-                                                    <rect key="frame" x="247" y="20" width="124" height="30"/>
+                                                    <rect key="frame" x="184.5" y="23" width="124" height="25"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
@@ -389,10 +389,13 @@ Winner:</string>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="26" translatesAutoresizingMaskIntoConstraints="NO" id="qA9-Xi-Exp" userLabel="Player Name">
-                                                    <rect key="frame" x="70" y="8" width="178" height="29"/>
+                                                    <rect key="frame" x="78" y="11" width="107.5" height="29"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29" id="elK-BB-Xzy"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
@@ -472,7 +475,7 @@ Winner:</string>
             <objects>
                 <navigationController title="Player" id="vC3-pB-5Vb" userLabel="Player Nav Controller" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <rect key="frame" x="0.0" y="24" width="820" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -488,30 +491,30 @@ Winner:</string>
             <objects>
                 <tableViewController id="LJE-OC-TWp" userLabel="Player Detail Controller" customClass="DetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="SL9-M4-ZwA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="820" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="E1w-U3-R9W">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Nv5-Pq-gIo" userLabel="Name Cell">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="820" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nv5-Pq-gIo" id="S6k-y0-Uxb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6h-Hn-vby">
-                                                    <rect key="frame" x="8" y="11" width="88" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="576" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="XnU-c2-eEF"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="XnU-c2-eEF"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVR-iA-HUe">
-                                                    <rect key="frame" x="104" y="7" width="263" height="30"/>
+                                                    <rect key="frame" x="604" y="5" width="208" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="500" constant="208" id="c5V-MC-9wH"/>
                                                     </constraints>
@@ -529,23 +532,23 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="oFB-HY-3Jv" userLabel="Token Cell">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="88.5" width="820" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oFB-HY-3Jv" id="Bgb-XW-EAd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX4-n0-iXY">
-                                                    <rect key="frame" x="8" y="11" width="88" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="576" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="9CC-xI-WAb"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="9CC-xI-WAb"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rRx-fX-wmy">
-                                                    <rect key="frame" x="104" y="7" width="263" height="30"/>
+                                                    <rect key="frame" x="604" y="5" width="208" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="500" constant="208" id="OGV-WL-sCH"/>
                                                     </constraints>
@@ -563,23 +566,23 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Mtu-ou-mqg" userLabel="Salary Cell">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="132.5" width="820" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mtu-ou-mqg" id="PcE-r7-Arv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHk-07-M90" userLabel="Salary">
-                                                    <rect key="frame" x="8" y="11" width="88" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="576" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="SpV-1P-Ab2"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="SpV-1P-Ab2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Dc-yk-syF">
-                                                    <rect key="frame" x="104" y="7" width="263" height="30"/>
+                                                    <rect key="frame" x="604" y="5" width="208" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="500" constant="208" id="NEi-Zz-bRw"/>
                                                     </constraints>
@@ -597,23 +600,23 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="X2m-Cy-hrP" userLabel="Money Cell">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="176.5" width="820" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="X2m-Cy-hrP" id="iVL-2Z-eaU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2O-ZE-UEd">
-                                                    <rect key="frame" x="8" y="11" width="88" height="22"/>
+                                                    <rect key="frame" x="20" y="11" width="576" height="22"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="zwc-pu-eSV"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="zwc-pu-eSV"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="drb-ZD-lXu">
-                                                    <rect key="frame" x="104" y="7" width="263" height="30"/>
+                                                    <rect key="frame" x="604" y="5" width="208" height="34"/>
                                                     <accessibility key="accessibilityConfiguration">
                                                         <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                                     </accessibility>
@@ -634,28 +637,28 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1ti-3V-emn" userLabel="Add Cell">
-                                        <rect key="frame" x="0.0" y="176" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="820" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1ti-3V-emn" id="hKX-Sw-aiQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nci-nc-qY9">
-                                                    <rect key="frame" x="104" y="7" width="153" height="30"/>
+                                                    <rect key="frame" x="104" y="5" width="98" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="500" constant="98" id="yJE-FT-tyh"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQK-BU-QwL">
-                                                    <rect key="frame" x="265" y="6" width="102" height="32"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQK-BU-QwL">
+                                                    <rect key="frame" x="210" y="6" width="602" height="32"/>
                                                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <accessibility key="accessibilityConfiguration" label="">
                                                         <accessibilityTraits key="traits" button="YES"/>
                                                     </accessibility>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="102" id="27H-d7-IZ4"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="27H-d7-IZ4"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="Add $"/>
@@ -674,26 +677,26 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1Mq-0W-HTV" userLabel="Subtract Cell">
-                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="264.5" width="820" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Mq-0W-HTV" id="H4E-KY-6oX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6E4-nb-eT5">
-                                                    <rect key="frame" x="104" y="7" width="153" height="30"/>
+                                                    <rect key="frame" x="104" y="5" width="98" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="500" constant="98" id="Te4-Ew-Vg5"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3c-Yt-R0K">
-                                                    <rect key="frame" x="265" y="6" width="102" height="32"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3c-Yt-R0K">
+                                                    <rect key="frame" x="210" y="6" width="602" height="32"/>
                                                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <accessibility key="accessibilityConfiguration" label=""/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="102" id="Rmp-GM-zWe"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="Rmp-GM-zWe"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="Subtract $"/>
@@ -712,24 +715,24 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="YYS-hK-aOe" userLabel="Send Cell">
-                                        <rect key="frame" x="0.0" y="264" width="375" height="172"/>
+                                        <rect key="frame" x="0.0" y="308.5" width="820" height="172"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YYS-hK-aOe" id="3Hd-N9-Ehe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="172"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send To:" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC7-ou-OtZ">
-                                                    <rect key="frame" x="8" y="54" width="88" height="22"/>
+                                                    <rect key="frame" x="20" y="57" width="576" height="21.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21.5" id="DhT-Hq-6og"/>
-                                                        <constraint firstAttribute="width" constant="88" id="Qvr-aU-YNL"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="Qvr-aU-YNL"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIJ-qw-d4d">
-                                                    <rect key="frame" x="104" y="133" width="153" height="30"/>
+                                                    <rect key="frame" x="116" y="136" width="98" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="500" constant="98" id="Big-M4-3no"/>
                                                     </constraints>
@@ -737,7 +740,7 @@ Winner:</string>
                                                     <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="send" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uzv-YB-lf4">
-                                                    <rect key="frame" x="104" y="0.0" width="263" height="125"/>
+                                                    <rect key="frame" x="604" y="3" width="208" height="125"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" priority="751" constant="208" id="7GF-rx-WUy"/>
                                                         <constraint firstAttribute="height" constant="125" id="MNN-U2-cUI"/>
@@ -747,12 +750,12 @@ Winner:</string>
                                                         <outlet property="delegate" destination="LJE-OC-TWp" id="qHp-DA-2dc"/>
                                                     </connections>
                                                 </pickerView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icj-rY-m5d">
-                                                    <rect key="frame" x="265" y="133" width="102" height="32"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icj-rY-m5d">
+                                                    <rect key="frame" x="222" y="136" width="590" height="32"/>
                                                     <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <accessibility key="accessibilityConfiguration" label=""/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="102" id="evV-rY-LKl"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="evV-rY-LKl"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="Send $"/>
@@ -776,14 +779,14 @@ Winner:</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="UhZ-hB-5De" userLabel="Photo Cell">
-                                        <rect key="frame" x="0.0" y="436" width="375" height="66"/>
+                                        <rect key="frame" x="0.0" y="480.5" width="820" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UhZ-hB-5De" id="UHz-JS-e77">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="820" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIf-S1-Lxo">
-                                                    <rect key="frame" x="104" y="17" width="263" height="32"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIf-S1-Lxo">
+                                                    <rect key="frame" x="592" y="17" width="208" height="32"/>
                                                     <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <accessibility key="accessibilityConfiguration" label=""/>
                                                     <constraints>
@@ -796,9 +799,9 @@ Winner:</string>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsT-Vx-Ugg">
-                                                    <rect key="frame" x="8" y="22" width="88" height="21"/>
+                                                    <rect key="frame" x="20" y="22.5" width="564" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="uDs-CY-Yel"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="uDs-CY-Yel"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -858,10 +861,10 @@ Winner:</string>
             <point key="canvasLocation" x="1034.4000000000001" y="504.19790104947532"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="smiley.png" width="720" height="720"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ITW-gf-mdr"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="smiley.png" width="720" height="720"/>
+    </resources>
 </document>

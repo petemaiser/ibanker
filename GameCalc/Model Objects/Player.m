@@ -12,7 +12,6 @@
 
 + (Player *)emptyPlayerOfType:(PlayerType)type
 {
-    
     Player *player;
     player = [[self alloc] init];
     
@@ -112,16 +111,14 @@
 {
     self = [super init];
     if (self) {
-        
         _version = [aDecoder decodeIntForKey:@"version"];
-        _playerImage = [aDecoder decodeObjectForKey:@"playerImage"];
-        _playerName = [aDecoder decodeObjectForKey:@"playerName"];
-        _playerTag = [aDecoder decodeObjectForKey:@"playerTag"];
-        _playerTagLabel = [aDecoder decodeObjectForKey:@"playerTagLabel"];
+        _playerImage = [aDecoder decodeObjectOfClass:[UIImage class] forKey:@"playerImage"];
+        _playerName = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"playerName"];
+        _playerTag = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"playerTag"];
+        _playerTagLabel = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"playerTagLabel"];
         _salaryInDollars = [aDecoder decodeIntForKey:@"sallaryInDollars"];
         _bankAccountInDollars = [aDecoder decodeInt64ForKey:@"bankAccountInDollars"];
-        _dateCreated = [aDecoder decodeObjectForKey:@"dateCreated"];
-        
+        _dateCreated = [aDecoder decodeObjectOfClass:[NSDate class] forKey:@"dateCreated"];
     }
     
     return self;
@@ -132,6 +129,11 @@
     NSString *descriptionString = [[NSString alloc] initWithFormat:@"%@, %@ (salary $%d), %lld", self.playerName, self.playerTag, self.salaryInDollars, self.bankAccountInDollars];
     
     return descriptionString;
+}
+
++ (BOOL)supportsSecureCoding
+{
+    return YES;
 }
 
 @end

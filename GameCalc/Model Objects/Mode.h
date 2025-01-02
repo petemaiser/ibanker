@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Player.h"
 
-@interface Mode : NSObject
+@interface Mode : NSObject <NSSecureCoding>
 
 @property (nonatomic) int version;
 @property (nonatomic, copy) NSString *name;

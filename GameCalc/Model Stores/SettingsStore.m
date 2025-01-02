@@ -46,15 +46,21 @@
         // If there is no saved setting then setup a default
         
         // Selected Mode
+        NSSet *set = [NSSet setWithObjects:[Mode class], [NSString class], nil];
         NSString * pathForMode = [[self archiveDirectory] stringByAppendingPathComponent:@"settings.mode.archive"];
-        _selectedMode = [NSKeyedUnarchiver unarchiveObjectWithFile:pathForMode];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:pathForMode];
+        NSError *error;
+        _selectedMode = [NSKeyedUnarchiver unarchivedObjectOfClasses:set fromData:data error:&error];
         if (!_selectedMode) {
             _selectedMode = [Mode defaultMode];
         }
         
         // Spinner Settings
+        NSSet *set2 = [NSSet setWithObjects:[NSNumber class], nil];
         NSString * pathForSpinner = [[self archiveDirectory] stringByAppendingPathComponent:@"settings.spinner.archive"];
-        NSNumber *enabledSpinner = [NSKeyedUnarchiver unarchiveObjectWithFile:pathForSpinner];
+        NSData *data2 = [[NSData alloc] initWithContentsOfFile:pathForSpinner];
+        NSError *error2;
+        NSNumber *enabledSpinner = [NSKeyedUnarchiver unarchivedObjectOfClasses:set2 fromData:data2 error:&error2];
         if (enabledSpinner) {
             _enabledSpinner = [enabledSpinner boolValue];
         } else {
@@ -102,20 +108,19 @@
 
 - (BOOL)saveMode
 {
+    NSError *error;
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:self.selectedMode requiringSecureCoding:YES error:&error];
     NSString *path = [[self archiveDirectory] stringByAppendingPathComponent:@"settings.mode.archive"];
-    
-    return [NSKeyedArchiver archiveRootObject:self.selectedMode
-                                       toFile:path];
+    return [data writeToFile:path atomically:YES];
 }
 
 - (BOOL)saveSpinner
 {
+    NSError *error;
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:@(self.enabledSpinner) requiringSecureCoding:YES error:&error];
     NSString *path = [[self archiveDirectory] stringByAppendingPathComponent:@"settings.spinner.archive"];
-    
-    return [NSKeyedArchiver archiveRootObject:@(self.enabledSpinner)
-                                       toFile:path];
+    return [data writeToFile:path atomically:YES];
 }
-
 
 - (NSString *)archiveDirectory
 {

@@ -16,7 +16,7 @@ typedef NS_ENUM(NSInteger, PlayerType) {
     ,BankAccount15mType
 };
 
-@interface Player : NSObject
+@interface Player : NSObject <NSSecureCoding>
 
 @property (nonatomic) int version;
 @property (nonatomic) UIImage *playerImage;

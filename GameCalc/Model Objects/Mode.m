@@ -65,7 +65,7 @@
 {
     [aCoder encodeInt:self.version forKey:@"version"];
     [aCoder encodeObject:self.name forKey:@"name"];
-    [aCoder encodeInt:self.playerType forKey:@"playerType"];
+    [aCoder encodeInteger:self.playerType forKey:@"playerType"];
     [aCoder encodeBool:self.defaultSpinnerOn forKey:@"defaultSpinnerOn"];
 }
 
@@ -74,12 +74,17 @@
     self = [super init];
     if (self) {
         _version = [aDecoder decodeIntForKey:@"version"];
-        _name = [aDecoder decodeObjectForKey:@"name"];
-        _playerType = [aDecoder decodeIntForKey:@"playerType"];
+        _name = [aDecoder decodeObjectOfClass:[NSString class] forKey:@"name"];
+        _playerType = [aDecoder decodeIntegerForKey:@"playerType"];
         _defaultSpinnerOn = [aDecoder decodeBoolForKey:@"defaultSpinnerOn"];
     }
     
     return self;
+}
+
++ (BOOL)supportsSecureCoding
+{
+    return YES;
 }
 
 @end

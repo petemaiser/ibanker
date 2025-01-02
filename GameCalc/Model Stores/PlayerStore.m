@@ -40,9 +40,11 @@
     self = [super init];
     if (self) {
         
-        ///First try to retrieve saved players
-        NSString * path = [self archivePath];
-        _privatePlayers = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+        // First try to retrieve saved players
+        NSSet *set = [NSSet setWithObjects:[NSMutableArray class], [Player class], [NSString class], [NSDate class], [UIImage class], nil];
+        NSData *data = [[NSData alloc] initWithContentsOfFile:[self archivePath]];
+        NSError *error;
+        _privatePlayers = [NSKeyedUnarchiver unarchivedObjectOfClasses:set fromData:data error:&error];
         
         // If there are no saved players then start fresh
         if (!_privatePlayers) {
@@ -108,10 +110,9 @@
 
 - (BOOL)savePlayers
 {
-    NSString *path = [self archivePath];
-    
-    return [NSKeyedArchiver archiveRootObject:self.privatePlayers
-                                       toFile:path];
+    NSError *error;
+    NSData* data = [NSKeyedArchiver archivedDataWithRootObject:self.privatePlayers requiringSecureCoding:YES error:&error];
+    return [data writeToFile:[self archivePath] atomically:YES];
 }
 
 @end
